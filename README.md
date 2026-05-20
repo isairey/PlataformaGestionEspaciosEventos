@@ -1,496 +1,568 @@
-# SPHERE
+<div align="center">
 
-## CSPC Space Facility and Equipment Rental & Event Management System
+<img width="220" src="https://cdn-icons-png.flaticon.com/512/3176/3176363.png" />
 
-> An enterprise-grade facility management system for educational institutions and corporate spaces
+# 🌌 SPHERE
 
-[![PHP](https://img.shields.io/badge/PHP-8.1+-blue)](https://php.net/)
-[![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4-red)](https://codeigniter.com/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-blue)](https://www.mysql.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+### Plataforma moderna de gestión de espacios, eventos y renta de equipos ⚡
 
----
+<p align="center">
+  <b>SPHERE</b> es un sistema empresarial diseñado para la administración de instalaciones, reservas, eventos y equipos en instituciones educativas y espacios corporativos.
+</p>
 
-## Table of Contents
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php&logoColor=white">
+  <img src="https://img.shields.io/badge/CodeIgniter-Framework-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/Google_OAuth-Authentication-4285F4?style=for-the-badge&logo=google&logoColor=white">
+</p>
 
-- [Overview](#overview)
-- [Quick Start](#-quick-start)
-- [Screenshots](#-screenshots)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [System Architecture](#system-architecture)
-- [User Roles & Permissions](#user-roles--permissions)
-- [API Documentation](#api-documentation)
-- [Database Schema](#database-schema)
-- [Security](#security)
-- [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-vista-previa">Vista previa</a>
+</p>
+
+</div>
 
 ---
 
-## Overview
+# 🌌 Acerca del proyecto
 
-**SPHERE** streamlines facility booking, scheduling, and administration through an intuitive interface designed for multi-user environments. Whether managing educational facilities, corporate spaces, or event venues, SPHERE provides real-time availability tracking, intelligent conflict detection, and comprehensive management tools.
+**SPHERE** es una plataforma integral orientada a la gestión de espacios, reservas, equipos y eventos para instituciones educativas, empresas y centros organizacionales.
 
-### Core Use Cases
+El sistema fue desarrollado para:
 
-- **Facility Administrators** – Manage inventory, pricing, and availability across multiple facilities
-- **Facility Managers** – Schedule maintenance, track usage, and monitor operations
-- **Event Organizers** – Book spaces with integrated equipment and services
-- **Users** – Browse, book, and manage reservations with real-time availability
-- **Guests** – Limited access to public facilities and information
+- 🏢 Administrar instalaciones y espacios
+- 📅 Gestionar eventos y reservaciones
+- 🛠️ Controlar inventario de equipos
+- 🔐 Gestionar autenticación y permisos
+- 📊 Generar reportes y métricas
+- ⚡ Automatizar flujos administrativos
+- 📱 Ofrecer acceso multiplataforma
 
-### Key Advantages
-
-✓ **Prevent Double-Bookings** – Real-time conflict detection and validation  
-✓ **Automate Operations** – Workflows and approval systems reduce manual overhead  
-✓ **Optimize Revenue** – Dynamic pricing with add-ons, equipment, and fee calculations  
-✓ **Mobile-First Design** – Responsive interface, QR codes, and Google OAuth integration  
-✓ **Data-Driven Decisions** – Comprehensive analytics and reporting capabilities
+La plataforma incorpora herramientas modernas de administración, seguridad y análisis en tiempo real.
 
 ---
 
-## 🚀 Quick Start
+# ✨ Características
 
-Get SPHERE running in **5 minutes**:
+## 🏢 Gestión de instalaciones
+
+- 🏛️ Administración de espacios
+- 📋 Gestión de disponibilidad
+- 📅 Calendarios de reservación
+- ⚡ Prevención de conflictos
+- 🖼️ Galerías de instalaciones
+
+---
+
+## 📅 Sistema de reservaciones
+
+- 📆 Reservas dinámicas
+- ⚡ Disponibilidad en tiempo real
+- 🚫 Prevención de doble reservación
+- 🧾 Confirmaciones automáticas
+- 🔄 Extensión y cancelación de reservas
+
+---
+
+## 🛠️ Gestión de equipos
+
+- 📦 Inventario de equipos
+- 📊 Control de stock
+- 🛠️ Configuración de precios
+- 📅 Disponibilidad programada
+- ⚡ Seguimiento en tiempo real
+
+---
+
+## 👥 Gestión de usuarios
+
+- 👤 Roles de usuario
+- 🔐 Autenticación segura
+- 🌐 Login con Google OAuth
+- 📱 Gestión de perfiles
+- 🛡️ Control de permisos
+
+---
+
+## 💳 Facturación y costos
+
+- 💰 Cálculo automático de costos
+- 📊 Tarifas dinámicas
+- ⚡ Cargos adicionales
+- 📈 Seguimiento financiero
+- 🧾 Gestión de transacciones
+
+---
+
+## 📡 Comunicaciones
+
+- 📧 Notificaciones automáticas
+- 🔔 Recordatorios de eventos
+- 📝 Encuestas de retroalimentación
+- ⚡ Alertas administrativas
+
+---
+
+# 👨‍💻 Módulos del sistema
+
+## 🏢 Facility Management Module
+
+Módulo encargado de instalaciones.
+
+### Funcionalidades:
+
+- 🏛️ Gestión de espacios
+- 📅 Disponibilidad
+- 📋 Configuración de planes
+- 🖼️ Gestión multimedia
+- ⚡ Control operativo
+
+---
+
+## 📅 Booking Module
+
+Sistema de reservaciones.
+
+### Funcionalidades:
+
+- 📆 Reservaciones
+- ⚡ Validación de conflictos
+- 📋 Gestión de eventos
+- 🧾 Confirmaciones
+- 🔄 Cancelaciones
+
+---
+
+## 🛠️ Equipment Module
+
+Gestión de equipos y materiales.
+
+### Funcionalidades:
+
+- 📦 Inventario
+- 📊 Monitoreo de stock
+- 💰 Configuración de rentas
+- 📅 Disponibilidad dinámica
+
+---
+
+## 👥 User Management Module
+
+Administración de usuarios.
+
+### Funcionalidades:
+
+- 🔐 Login y autenticación
+- 👤 Gestión de perfiles
+- 🛡️ Roles y permisos
+- 🌐 Google OAuth
+
+---
+
+## 📊 Analytics & Reports Module
+
+Módulo analítico.
+
+### Funcionalidades:
+
+- 📈 Métricas del sistema
+- 📋 Reportes
+- 📊 Estadísticas
+- 📄 Exportación Excel y Word
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+## ⚙️ Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js" />
+</p>
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- QR Code Libraries
+
+---
+
+## ⚙️ Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=php" />
+</p>
+
+- PHP 8.1+
+- CodeIgniter 4
+- Arquitectura MVC
+- REST APIs
+- Gestión empresarial
+
+---
+
+## 🗄️ Base de datos
+
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql" />
+</p>
+
+- MySQL 8+
+- Stored Procedures
+- Gestión relacional
+- Persistencia de datos
+- Control transaccional
+
+---
+
+## 🔐 Seguridad y autenticación
+
+<p>
+  <img src="https://skillicons.dev/icons?i=google" />
+</p>
+
+- Google OAuth 2.0
+- bcrypt
+- RBAC
+- CSRF Protection
+- Session Security
+
+---
+
+## 🧰 Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,npm" />
+</p>
+
+- Git
+- GitHub
+- VS Code
+- Composer
+- npm
+
+---
+
+# 📂 Estructura del proyecto
 
 ```bash
-# 1. Clone and navigate
-git clone https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System.git
-cd SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System
+SPHERE/
+│
+├── app/
+│   ├── Config/
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Services/
+│   ├── Filters/
+│   ├── Views/
+│   └── Database/
+│
+├── public/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── writable/
+│   ├── cache/
+│   ├── logs/
+│   ├── session/
+│   └── uploads/
+│
+├── vendor/
+├── composer.json
+├── package.json
+├── capsdb.sql
+├── README.md
+└── LICENSE
+```
 
-# 2. Install dependencies
+---
+
+# 🏗️ Arquitectura del sistema
+
+## ⚡ Arquitectura empresarial
+
+```text
+Cliente → Frontend → CodeIgniter Backend → MySQL Database
+```
+
+---
+
+## 🔄 Flujo del sistema
+
+```text
+Usuario → Login → Reservación → Validación → Confirmación → Gestión
+```
+
+---
+
+# 📊 Funcionalidades principales
+
+## 🏢 Gestión de instalaciones
+
+- Administración de espacios
+- Gestión de disponibilidad
+- Planes y paquetes
+- Galerías multimedia
+
+---
+
+## 📅 Reservaciones
+
+- Calendario dinámico
+- Prevención de conflictos
+- Confirmaciones automáticas
+- Extensiones de reservas
+
+---
+
+## 🛠️ Equipos
+
+- Inventario completo
+- Disponibilidad dinámica
+- Configuración de precios
+- Monitoreo de stock
+
+---
+
+## 📈 Administración
+
+- Dashboard analítico
+- Gestión de usuarios
+- Configuración del sistema
+- Reportes exportables
+
+---
+
+# 🔐 Seguridad
+
+## 🛡️ Protección del sistema
+
+- 🔑 OAuth 2.0
+- 🔒 bcrypt hashing
+- 🛡️ RBAC
+- ⚡ Protección CSRF
+- 🔐 Seguridad de sesiones
+- 🚫 Prevención SQL Injection
+
+---
+
+# ⚡ Instalación
+
+## 📋 Requisitos
+
+- PHP 8.1+
+- MySQL 8+
+- Composer
+- Node.js
+- Apache / Nginx
+- npm
+
+---
+
+# 🚀 Configuración del proyecto
+
+## 1️⃣ Clonar repositorio
+
+```bash
+git clone https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System.git
+```
+
+---
+
+## 2️⃣ Entrar al proyecto
+
+```bash
+cd SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System
+```
+
+---
+
+## 3️⃣ Instalar dependencias
+
+```bash
 composer install
 npm install
-
-# 3. Setup environment
-cp .env.example .env
-# Edit .env with your database credentials
-
-# 4. Initialize database
-mysql -u root -p -e "CREATE DATABASE sphere_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-mysql -u root -p sphere_db < capsdb.sql
-
-# 5. Start the application
-php spark serve
-# Access at http://localhost:8080
 ```
 
-**Default Credentials:**
-
-- Email: `admin@sphere.local`
-- Password: See database seed data
-
-See [Installation](#installation) section for detailed setup instructions.
-
 ---
 
-## 📸 Screenshots
-
-### Dashboard Overview
-
-The admin dashboard provides real-time insights with:
-
-- System metrics and usage analytics
-- Upcoming bookings and events
-- Revenue tracking
-- User activity logs
-
-### Facility Booking Interface
-
-- Real-time availability calendar
-- Equipment add-ons selection
-- Dynamic pricing calculation
-- Booking confirmation workflow
-
-### Equipment Management
-
-- Inventory tracking dashboard
-- Stock level monitoring
-- Rental rate configuration
-- Schedule-based availability
-
-### Admin Controls
-
-- User management interface
-- Facility configuration panel
-- Report generation tools
-- System settings and maintenance
-
-_Screenshots to be added to repository during first production release_
-
----
-
-## Key Features
-
-### Reservation Management
-
-- Real-time availability checking with dynamic date/time booking
-- Automatic conflict detection and double-booking prevention
-- Equipment allocation with stock tracking
-- Add-ons system for catering, services, and equipment rentals
-- Flexible booking extensions with automatic cost recalculation
-- Complete cancellation workflow and tracking
-
-### Facility Management
-
-- Multi-facility support with unlimited facilities
-- Tiered pricing plans and multiple booking packages per facility
-- Feature sets and inclusions per plan
-- Maintenance mode tracking
-- Gallery management for facility images
-- QR code generation for promotion and access
-
-### Equipment Management
-
-- Inventory tracking with real-time stock monitoring
-- Category-based organization
-- Customizable rental rates per unit
-- Schedule-based availability tracking
-- Batch operations for efficient management
-
-### User Management
-
-- Six role-based access levels (Admin, Faculty, Student, Employee, Facilitator, Guest)
-- Granular permission management
-- Google OAuth 2.0 and email authentication
-- Phone contact integration
-
-### Billing & Pricing
-
-- Intelligent cost calculation engine
-- Support for multiple pricing models (per-unit, per-hour, flat-rate)
-- Configurable fees (additional hours: ₱500/hour | maintenance: ₱2,000)
-- Real-time transaction tracking
-
-### Admin Dashboard
-
-- System analytics and usage metrics
-- User administration (create, edit, deactivate)
-- Facility and equipment configuration
-- Report generation (Excel/Word exports)
-- Event management and billing overview
-
-### Communications
-
-- Automated email notifications (confirmations, reminders, cancellations)
-- User feedback collection surveys
-- Admin contact form management
-- Real-time alerts for pending approvals
-
-### Additional Features
-
-- QR code support for facilities and access management
-- Document export (Excel and Word formats)
-- Guest registration with limited access
-- Responsive mobile-friendly design
-- Secure session management
-
----
-
-## Technology Stack
-
-| Layer              | Technologies                                     |
-| ------------------ | ------------------------------------------------ |
-| **Frontend**       | HTML5, CSS3, JavaScript, QR Code Library         |
-| **Backend**        | PHP 8.1+, CodeIgniter 4 Framework                |
-| **Database**       | MySQL 8.0+ with Stored Procedures                |
-| **Authentication** | Email/Password + Google OAuth 2.0                |
-| **Storage**        | File-based (uploads, documents, logs)            |
-| **Export**         | PHPSpreadsheet (Excel), PHPWord (Word documents) |
-
----
-
-## System Architecture
-
-For detailed architecture information, see the project documentation included in the repository.
-
----
-
-## Requirements
-
-### System Requirements
-
-- **PHP** 8.1 or newer
-- **MySQL** 8.0+ or **MariaDB** 10.5+
-- **Composer** (latest version)
-- **Node.js** 14.0+ (for npm dependencies)
-- **Apache** or **Nginx** (or PHP built-in server for development)
-
-### Required PHP Extensions
-
-- `intl` – Internationalization support
-- `mbstring` – Multi-byte string handling
-- `mysqli` – MySQL database connection
-- `curl` – HTTP requests
-- `gd` – Image manipulation
-
----
-
-## Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System.git
-cd SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System
-```
-
-### 2. Install Dependencies
-
-```bash
-composer install
-npm install
-```
-
-### 3. Configure Environment
-
-Copy the example environment file and configure your settings:
+## 4️⃣ Configurar entorno
 
 ```bash
 cp .env.example .env
 ```
 
-Update `.env` with your configuration:
+Editar credenciales de base de datos.
 
-```env
-app.baseURL = http://localhost:8080
-app.environment = development
+---
 
-database.default.hostname = localhost
-database.default.database = sphere_db
-database.default.username = root
-database.default.password = your_password
-database.default.DBDriver = MySQLi
-```
-
-### 4. Set Up Database
-
-Create the database and import the schema:
+## 5️⃣ Crear base de datos
 
 ```bash
-# Create database
-mysql -u root -p -e "CREATE DATABASE sphere_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -p -e "CREATE DATABASE sphere_db;"
+```
 
-# Import schema
+---
+
+## 6️⃣ Importar esquema
+
+```bash
 mysql -u root -p sphere_db < capsdb.sql
+```
 
-# Run migrations
+---
+
+## 7️⃣ Ejecutar migraciones
+
+```bash
 php spark migrate
 ```
 
-### 5. Set File Permissions
+---
 
-Ensure the writable directory has proper permissions:
-
-```bash
-chmod -R 755 writable/
-chmod -R 755 public/
-```
-
-### 6. Start Development Server
+## 8️⃣ Ejecutar servidor
 
 ```bash
 php spark serve
 ```
 
-Access the application at [http://localhost:8080](http://localhost:8080)
-
 ---
 
-## Configuration
-
-### Database Setup
-
-Configure your database connection in `.env`:
-
-```env
-database.default.hostname = localhost
-database.default.database = sphere_db
-database.default.username = root
-database.default.password = your_password
-database.default.DBDriver = MySQLi
-```
-
-### Google OAuth Setup
-
-To enable Google authentication:
-
-1. Visit [Google Cloud Console](https://console.cloud.google.com/)
-2. Create OAuth 2.0 credentials (Web application)
-3. Add authorized redirect URIs
-4. Configure in `.env`:
-
-```env
-GOOGLE_CLIENT_ID = your_client_id
-GOOGLE_CLIENT_SECRET = your_client_secret
-GOOGLE_REDIRECT_URI = http://localhost:8080/auth/google/callback
-```
-
----
-
-## User Roles & Permissions
-
-| Role            | Access Level | Primary Functions                                              |
-| --------------- | ------------ | -------------------------------------------------------------- |
-| **Admin**       | Full         | System administration, user management, facility configuration |
-| **Faculty**     | High         | Book facilities, view reports, manage events                   |
-| **Employee**    | High         | Facility operations, equipment tracking, maintenance           |
-| **Facilitator** | Medium       | Facility management, equipment handling                        |
-| **Student**     | Medium       | Browse facilities, request bookings, view availability         |
-| **Guest**       | Low          | Browse public facilities and information only                  |
-
----
-
-## API Documentation
-
-### Base URL
-
-```
-http://localhost:8080/api
-```
-
-### Core Endpoints
-
-**Facilities**
-
-```http
-GET  /api/facilities/list              # List all facilities
-GET  /api/facilities/data/:id          # Get facility details
-```
-
-**Bookings**
-
-```http
-POST /api/bookings                     # Create new booking
-POST /api/bookings/checkDateConflict   # Check availability
-POST /api/bookings/equipment-availability  # Check equipment availability
-```
-
----
-
-## Database Schema
-
-### Core Tables
-
-- `users` – User accounts and authentication
-- `facilities` – Facility information and details
-- `plans` – Booking plans and pricing tiers
-- `bookings` – Reservation records
-- `equipment` – Equipment inventory
-- `addons` – Additional services and items
-- `events` – Event management and tracking
-- `plan_features` – Features included in each plan
-- `plan_equipment` – Equipment allocations per plan
-- `booking_equipment` – Equipment assigned to bookings
-- `booking_addons` – Add-ons assigned to bookings
-- `equipment_schedule` – Equipment availability schedule
-
-### Stored Procedures
-
-- `sp_calculate_booking_cost()` – Calculate total booking cost with fees
-- `sp_check_equipment_availability()` – Verify equipment availability
-- `sp_get_plan_full_details()` – Retrieve complete plan information
-
----
-
-## Security
-
-The application implements industry-standard security practices:
-
-✓ **Authentication** – Email/password and Google OAuth 2.0  
-✓ **Authorization** – Role-based access control (RBAC)  
-✓ **Input Validation** – Comprehensive server-side validation  
-✓ **CSRF Protection** – Cross-site request forgery tokens  
-✓ **Password Security** – bcrypt hashing with salt  
-✓ **SQL Injection Prevention** – Parameterized queries  
-✓ **XSS Protection** – Output encoding and escaping  
-✓ **Session Security** – Secure session management
-
----
-
-## Project Structure
-
-```
-SPHERE/
-├── app/                     # Application code
-│   ├── Config/             # Configuration files
-│   ├── Controllers/        # Request handlers
-│   ├── Models/             # Data models
-│   ├── Services/           # Business logic layer
-│   ├── Filters/            # Route filters
-│   ├── Views/              # View templates
-│   └── Database/           # Database configurations
-├── public/                  # Web root (document root)
-│   ├── index.php           # Application entry point
-│   ├── assets/             # Static assets
-│   ├── css/                # Stylesheets
-│   ├── js/                 # JavaScript
-│   └── images/             # Image files
-├── system/                  # CodeIgniter framework core
-├── writable/               # Application writable directories
-│   ├── cache/              # Cache files
-│   ├── logs/               # Log files
-│   ├── session/            # Session data
-│   └── uploads/            # User uploads
-├── vendor/                  # Composer packages
-├── composer.json           # PHP dependencies
-├── package.json            # Node.js dependencies
-├── capsdb.sql              # Database schema
-└── .env                    # Environment configuration
-```
-
----
-
-## Testing
-
-Run the test suite:
+## 9️⃣ Abrir aplicación
 
 ```bash
-php spark test
+http://localhost:8080
 ```
 
 ---
 
-## Contributing
+# 📸 Vista previa
 
-We welcome contributions to improve SPHERE. To contribute:
+## 🖥️ Interfaces del sistema
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add YourFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+<div align="center">
+
+### 📊 Dashboard administrativo
+![Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200)
+
+### 🏢 Gestión de instalaciones
+![Facilities](https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200)
+
+### 📅 Sistema de reservaciones
+![Bookings](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200)
+
+### 🛠️ Gestión de equipos
+![Equipment](https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200)
+
+</div>
 
 ---
 
-## License
+# 👥 Roles del sistema
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+| Rol | Nivel |
+|---|---|
+| 👑 Admin | Acceso completo |
+| 👨‍🏫 Faculty | Gestión avanzada |
+| 👨‍💼 Employee | Operaciones |
+| 🛠️ Facilitator | Gestión media |
+| 🎓 Student | Reservaciones |
+| 👤 Guest | Acceso limitado |
 
 ---
 
-## Support
+# 🧠 Objetivos del proyecto
 
-For issues, questions, or suggestions:
+## 🎯 Aprendizaje y arquitectura empresarial
 
-- **Email** – [jomeltienes00@gmail.com](mailto:jomeltienes00@gmail.com)
-- **GitHub Issues** – [Report bugs](https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System/issues)
-- **GitHub Discussions** – [Ask questions](https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System/discussions)
-- **Documentation** – See project comments and inline code documentation
+- Sistemas empresariales
+- Gestión de reservaciones
+- Arquitectura MVC
+- Seguridad OAuth
+- Gestión de inventarios
+- Analítica y reportes
+- Plataformas escalables
+
+---
+
+# 🚧 Roadmap
+
+## 🔮 Próximas mejoras
+
+- 📱 Aplicación móvil
+- ☁️ Cloud deployment
+- 🔔 Push notifications
+- 🤖 IA para recomendaciones
+- 📊 Dashboard avanzado
+- 🌐 Multi-language support
+- 📡 Integración IoT
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Cómo contribuir
+
+1. Fork del proyecto
+
+```bash
+git checkout -b feature/nueva-funcionalidad
+```
+
+2. Commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+3. Push
+
+```bash
+git push origin feature/nueva-funcionalidad
+```
+
+4. Pull Request 🚀
+
+---
+
+# 👨‍💻 Desarrollador
+
+<div align="center">
+
+## Isai Reyes — Full Stack Developer
+
+Desarrollador apasionado por plataformas empresariales, arquitecturas modernas y sistemas escalables 🚀
+
+</div>
+
+---
+
+# 🌟 Apoya el proyecto
+
+⭐ Dale una estrella  
+🍴 Haz fork  
+📢 Comparte el proyecto
+
+---
+
+# 📜 Licencia
+
+Proyecto open source bajo licencia MIT orientado al aprendizaje de sistemas empresariales y gestión moderna de instalaciones.
 
 ---
 
 <div align="center">
 
-**Built with CodeIgniter 4**
-
-[↑ Back to top](#sphere)
+### 🌌 SPHERE — gestión inteligente de espacios y eventos ⚡
 
 </div>
