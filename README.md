@@ -252,7 +252,7 @@ Módulo analítico.
 # 📂 Estructura del proyecto
 
 ```bash
-SPHERE/
+PlataformaGestionEspaciosEventos/
 │
 ├── app/
 │   ├── Config/
@@ -372,7 +372,7 @@ Usuario → Login → Reservación → Validación → Confirmación → Gestió
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System.git
+git clone https://github.com/isairey/PlataformaGestionEspaciosEventos.git
 ```
 
 ---
@@ -380,7 +380,7 @@ git clone https://github.com/SHIROxcx/SPHERE-CSPC-Space-Facility-and-Equipment-R
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd SPHERE-CSPC-Space-Facility-and-Equipment-Rental-and-Event-Management-System
+cd PlataformaGestionEspaciosEventos
 ```
 
 ---
