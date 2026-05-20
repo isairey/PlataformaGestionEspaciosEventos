@@ -1,0 +1,209 @@
+################################
+# CodeIgniter Specific Files  #
+################################
+
+# Writable directories
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/temp/*
+writable/debugbar/*
+writable/uploads/*
+writable/email/*
+
+# Keep .gitkeep files
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/temp/.gitkeep
+!writable/uploads/.gitkeep
+!writable/email/.gitkeep
+
+################################
+# Environment & Secrets       #
+################################
+
+# Environment configuration (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.backup
+
+# Database backups
+*.sql.gz
+*.sql.bak
+*.db.backup
+
+################################
+# PHP & Composer              #
+################################
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# PHP-specific
+*.bak
+*.tmp
+.php_cs
+.php_cs.cache
+
+################################
+# Node.js & Frontend          #
+################################
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+npm-error.log
+
+# Build artifacts
+dist/
+build/
+
+################################
+# IDE & Editor                #
+################################
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim & Vi
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Emacs
+*~
+*#
+.*~
+
+################################
+# Operating System Files     #
+################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+
+################################
+# IDE Generated Files        #
+################################
+
+# PHPStorm
+.phpstorm.meta.php
+.php_cs.dist
+.idea/
+
+# NetBeans
+nbproject/
+.nb-gradle/
+
+# Eclipse
+.project
+.settings/
+.buildpath
+
+################################
+# Testing & Coverage         #
+################################
+
+# PHPUnit
+coverage/
+.phpunit.result.cache
+phpunit-report.xml
+
+# Temporary test files
+test-output/
+tests/temp/
+
+################################
+# Build & Deployment         #
+################################
+
+# Build directories
+build/
+dist/
+bin/
+
+# Local deployment files
+deploy/
+.deploy
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+################################
+# Documentation              #
+################################
+
+# Generation directories (if applicable)
+docs/generated/
+
+################################
+# Custom/Project Specific    #
+################################
+
+# Local configuration
+local/
+.local/
+
+# Debug files
+debug/
+*.log
+
+# Temporary directories
+temp/
+tmp/
+.tmp/
+
+# Downloaded files
+downloads/
+
+# IDE files (general)
+*.sublime-settings
+.project
+.classpath
+
+################################
+# Keep Important Files       #
+################################
+
+# These files should be committed
+!.gitignore
+!.gitkeep
+!public/.htaccess
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/temp/.gitkeep

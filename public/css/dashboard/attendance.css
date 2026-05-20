@@ -1,0 +1,421 @@
+/* Attendance Page Specific Styles */
+
+.event-info-card {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.event-info-card h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.event-info-card p {
+    margin-bottom: 8px;
+    color: var(--dark-text);
+}
+
+/* QR Scanner Styles */
+.scanner-card {
+    height: 100%;
+}
+
+.qr-scanner {
+    position: relative;
+    width: 100%;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+#qrVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scanner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.scanner-frame {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #22c55e;
+    border-radius: 12px;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    animation: scannerPulse 2s ease-in-out infinite;
+}
+
+@keyframes scannerPulse {
+    0%, 100% {
+        border-color: #22c55e;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
+                    0 0 20px rgba(34, 197, 94, 0.5);
+    }
+    50% {
+        border-color: #16a34a;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5),
+                    0 0 30px rgba(34, 197, 94, 0.8);
+    }
+}
+
+.scanner-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.scanner-controls button {
+    flex: 1;
+    max-width: 200px;
+}
+
+/* Scan Result */
+.scan-result {
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    animation: slideDown 0.3s ease-out;
+}
+
+.scan-result.success {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #065f46;
+    border-left: 4px solid #22c55e;
+}
+
+.scan-result.error {
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    color: #991b1b;
+    border-left: 4px solid #ef4444;
+}
+
+.scan-result i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.scan-result h6 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.scan-result p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Guest List Table */
+.table thead th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: var(--dark-text);
+    border-bottom: 2px solid #e2e8f0;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background: rgba(30, 60, 114, 0.04);
+    transform: translateX(5px);
+}
+
+.table tbody tr.attended {
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-badge.attended {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #065f46;
+}
+
+.status-badge.pending {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #92400e;
+}
+
+.time-badge {
+    padding: 4px 10px;
+    background: #f8fafc;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Statistics Cards Enhancement */
+.stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.stat-card .stat-icon.bg-primary {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.stat-card .stat-icon.bg-success {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.stat-card .stat-icon.bg-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.stat-card .stat-icon.bg-info {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+/* Empty State */
+.empty-scanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: #94a3b8;
+}
+
+.empty-scanner i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-scanner h5 {
+    margin-bottom: 10px;
+}
+
+/* Loading Spinner */
+.scanner-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #22c55e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Download Buttons */
+.btn-group .btn {
+    border-radius: 8px;
+}
+
+.btn-group .btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: 2px solid #f1f3f5;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+}
+
+.modal-title {
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.modal-footer {
+    border-top: 2px solid #f1f3f5;
+    padding: 20px 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scanner-frame {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .col-md-5, .col-md-7 {
+        margin-bottom: 20px;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 0 !important;
+    }
+    
+    .event-info-card .row > div {
+        margin-bottom: 10px;
+    }
+    
+    .table {
+        font-size: 0.85rem;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        padding: 10px 8px;
+    }
+    
+    .scanner-controls {
+        flex-direction: column;
+    }
+    
+    .scanner-controls button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .stat-card .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .stat-info h3 {
+        font-size: 2rem;
+    }
+    
+    .status-badge {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+}
+
+/* Animation for new attendance entries */
+@keyframes newEntry {
+    0% {
+        background: rgba(34, 197, 94, 0.3);
+        transform: scale(1.02);
+    }
+    100% {
+        background: rgba(34, 197, 94, 0.05);
+        transform: scale(1);
+    }
+}
+
+.table tbody tr.new-entry {
+    animation: newEntry 1s ease-out;
+}
+
+/* Scan success effect */
+@keyframes scanSuccess {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scan-result.success {
+    animation: scanSuccess 0.5s ease-out;
+}
+
+/* Print styles for downloaded reports */
+@media print {
+    .sidebar,
+    .navbar,
+    .card-header .btn-group,
+    .scanner-card,
+    .btn-action {
+        display: none !important;
+    }
+    
+    .main-content {
+        padding: 0;
+    }
+    
+    .table {
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cspc-booking-system",
+  "version": "1.0.0",
+  "description": "CSPC Digital Booking System",
+  "scripts": {
+    "postinstall": "npm run copy-vendor",
+    "copy-vendor": "node scripts/copy-vendor.js"
+  },
+  "dependencies": {
+    "html5-qrcode": "^2.3.8"
+  }
+}
