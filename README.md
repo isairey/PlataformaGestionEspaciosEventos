@@ -444,27 +444,7 @@ http://localhost:8080
 
 ---
 
-# 📸 Vista previa
 
-## 🖥️ Interfaces del sistema
-
-<div align="center">
-
-### 📊 Dashboard administrativo
-![Dashboard](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200)
-
-### 🏢 Gestión de instalaciones
-![Facilities](https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200)
-
-### 📅 Sistema de reservaciones
-![Bookings](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200)
-
-### 🛠️ Gestión de equipos
-![Equipment](https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200)
-
-</div>
-
----
 
 # 👥 Roles del sistema
 
